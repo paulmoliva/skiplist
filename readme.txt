@@ -9,8 +9,7 @@ very large inventory of vehicles. The presentation layer (that you are not respo
 will be a browser that the customer and managers use to search for different types of vehicles by make,
 by engine type, and by carrying capacity. In addition to these search features, your app will have to
 support deletion and addition of vehicle inventory. The initial data load will be from a tab delimited text
-file – this is the only section of the code that you are allowed to use tokenizer to parse individual lines of
-text to create objects.
+file – this is the only section of the code that you are allowed to use tokenizer to parse individual lines of text to create objects.
 Methodology:
 Each vehicle will be an object of Vehicle type with the following slots: int::id, string::make,
 string::model, char::engineType (D:diesel, G:gas, H:hybrid,E:electric), int::carryingCapacity, 0-
@@ -23,8 +22,7 @@ object, and the delete command will be followed by an id of an object to be dele
 is t for terminate the application.
 Design note: You might consider each vehicle object to have an internal linked list to the SkipListNode
 objects for the ease of implementing the delete function. The problem is if you delete a vehicle object,
-first locate the vehicle using the allVehicles LList, but if you delete the object, it is still being pointed to
-by the other SkipListNodes. One option, is to search all other link lists to delete the individual
+first locate the vehicle using the allVehicles LList, but if you delete the object, it is still being pointed to by the other SkipListNodes. One option, is to search all other link lists to delete the individual
 SkipListNodes in byMake, byEngineType, byCarryingCapacity OR have a doubly linked lists in each
 vehicle object that point to the individual SkipListNodes to be deleted.
 Commands to the API:
