@@ -1,0 +1,10 @@
+Subaru	Forrester	G	100	5
+Toyota	Corolla		G	750	4
+Ford	F-150		D	1250	3
+Toyota	Camry		G	850	5
+Subaru	Outback		G	950	4
+Ford	Taurus		G	650	2
+Dodge	Ram		D	1500	3
+Dodge	Neon		G	750	3
+Toyota	Prius		H	650	4
+Tesla	Star		E	750	5
